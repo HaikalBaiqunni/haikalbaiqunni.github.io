@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haikal Hakim Baiqunni — R&D Engineer</title>
+
+<meta name="description" content="Haikal Hakim Baiqunni — R&D Engineer at Mitutoyo Corporation, Japan. Mechatronics, precision non-contact measurement, smart eddy-current sensors, motor control, and AI-augmented engineering.">
+<meta name="author" content="Haikal Hakim Baiqunni">
+<meta name="theme-color" content="#12293F">
+<link rel="canonical" href="https://haikalbaiqunni.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Haikal Hakim Baiqunni — R&D Engineer">
+<meta property="og:description" content="Mechatronics, precision sensing, and AI-augmented engineering. R&D Engineer at Mitutoyo Corporation, Japan.">
+<meta property="og:url" content="https://haikalbaiqunni.github.io/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Haikal Hakim Baiqunni — R&D Engineer">
+<meta name="twitter:description" content="Mechatronics, precision sensing, and AI-augmented engineering.">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #12293F;
+    --bg-2: #0D2032;
+    --panel: #16324F;
+    --ink: #E7EEF3;
+    --ink-dim: #9FB5C7;
+    --ink-faint: #85A0B4;
+    --accent: #D89A5A;
+    --accent-dim: #A9713A;
+    --grid: rgba(231,238,243,0.06);
+    --grid-strong: rgba(231,238,243,0.14);
+  }
+  *{ box-sizing: border-box; margin:0; padding:0; }
+  html{ scroll-behavior: smooth; }
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+  body::before{
+    content:"";
+    position: fixed; inset:0;
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 32px 32px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .wrap{ max-width: 880px; margin: 0 auto; padding: 0 28px; position: relative; z-index: 1; }
+  h1,h2,h3, .stamp{ font-family: 'Space Grotesk', sans-serif; }
+  .mono{ font-family: 'JetBrains Mono', monospace; }
+
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+  .skip{
+    position:absolute; left:-9999px; top:0;
+    background: var(--accent); color:#12293F; padding:10px 16px;
+    font-family:'JetBrains Mono', monospace; font-size:12px; z-index: 50;
+  }
+  .skip:focus{ left: 12px; top: 12px; }
+
+  /* ---- Sheet index (nav) ---- */
+  .navbar{
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(18,41,63,0.86);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--grid-strong);
+  }
+  .navbar .wrap{ display:flex; align-items:center; justify-content:space-between; gap:18px; padding-top:12px; padding-bottom:12px; }
+  .nav-id{ font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:.12em; color: var(--ink-faint); text-transform: uppercase; }
+  .nav-links{ display:flex; gap:18px; flex-wrap:wrap; }
+  .nav-links a{
+    font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:.08em;
+    text-transform: uppercase; color: var(--ink-dim); text-decoration:none;
+    transition: color .2s;
+  }
+  .nav-links a:hover{ color: var(--accent); }
+  @media (max-width: 620px){ .nav-id{ display:none; } .navbar .wrap{ justify-content:center; } }
+
+  /* ---- Hero ---- */
+  .hero{
+    min-height: 88vh;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative;
+    padding-top: 40px; padding-bottom: 40px;
+  }
+  .callout{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid var(--accent-dim);
+    padding: 4px 10px;
+    margin-bottom: 22px;
+    align-self: flex-start;
+  }
+  .hero h1{
+    font-size: clamp(38px, 7vw, 68px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+  .hero .role{
+    color: var(--ink-dim);
+    font-size: clamp(15px, 2.2vw, 19px);
+    margin-top: 14px;
+    max-width: 560px;
+  }
+  .hero .desc{
+    margin-top: 24px;
+    color: var(--ink-dim);
+    max-width: 540px;
+    font-size: 15px;
+  }
+  .hero .links{ margin-top: 34px; display:flex; gap: 18px; flex-wrap: wrap; align-items:center; }
+  .hero .links a{
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+    border-bottom: 1px solid var(--ink-faint);
+    padding-bottom: 3px;
+    transition: border-color .2s, color .2s;
+  }
+  .hero .links a:hover{ color: var(--accent); border-color: var(--accent); }
+  .hero .links a.cta{
+    border: 1px solid var(--accent-dim);
+    color: var(--accent);
+    padding: 7px 14px;
+  }
+  .hero .links a.cta:hover{ background: rgba(216,154,90,0.10); border-color: var(--accent); }
+
+  .diagram{ position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 340px; opacity: 0.9; }
+  .diagram svg{ width: 100%; height: auto; }
+  .diagram .dim-line{ stroke: var(--accent); stroke-width: 1; fill:none; }
+  .diagram .dim-text{ fill: var(--ink-dim); font-family: 'JetBrains Mono', monospace; font-size: 8px; }
+  .diagram .part{ fill: none; stroke: var(--ink-dim); stroke-width: 1; }
+
+  @media (max-width: 900px){ .diagram{ width: 260px; opacity: .5; } }
+  @media (max-width: 760px){ .diagram{ display:none; } }
+
+  /* ---- Sections ---- */
+  section{ padding: 90px 0; border-top: 1px solid var(--grid-strong); scroll-margin-top: 60px; }
+  .eyebrow{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .eyebrow::before{ content: "// "; color: var(--ink-faint); }
+  h2{ font-size: 26px; font-weight: 500; margin-bottom: 24px; }
+
+  .prose{ color: var(--ink-dim); max-width: 640px; font-size: 15px; }
+  .prose b{ color: var(--ink); font-weight: 500; }
+  .prose a{ color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-dim); }
+  .prose a:hover{ color: var(--ink); }
+
+  /* ---- Revision log (timeline) ---- */
+  .revlog{ width: 100%; border-collapse: collapse; margin-top: 10px; }
+  .revlog th{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); text-align: left; padding: 8px 14px;
+    border-bottom: 1px solid var(--grid-strong);
+  }
+  .revlog td{
+    padding: 16px 14px;
+    border-bottom: 1px solid var(--grid);
+    vertical-align: top;
+    font-size: 14px;
+  }
+  .revlog tr:hover td{ background: rgba(231,238,243,0.02); }
+  .rev-id{ font-family: 'JetBrains Mono', monospace; color: var(--accent); font-size: 13px; white-space: nowrap; }
+  .rev-date{ font-family: 'JetBrains Mono', monospace; color: var(--ink-faint); font-size: 12px; white-space: nowrap; }
+  .rev-org{ color: var(--ink); font-weight: 500; }
+  .rev-desc{ color: var(--ink-dim); font-size: 13.5px; margin-top: 3px; }
+  .rev-meta{ font-family:'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-faint); margin-top: 8px; }
+
+  /* ---- Item list (projects) ---- */
+  .items{ margin-top: 10px; border-top: 1px solid var(--grid-strong); }
+  .item{
+    display: grid;
+    grid-template-columns: 54px 1fr;
+    gap: 0 18px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--grid);
+  }
+  .item:hover{ background: rgba(231,238,243,0.02); }
+  .item .no{ font-family:'JetBrains Mono', monospace; color: var(--accent); font-size: 13px; padding-top: 2px; }
+  .item h3{ font-size: 16px; font-weight: 500; color: var(--ink); }
+  .item .body{ color: var(--ink-dim); font-size: 14px; margin-top: 6px; max-width: 620px; }
+  .item .stack{ font-family:'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-faint); margin-top: 10px; letter-spacing: .04em; }
+  @media (max-width: 600px){
+    .item{ grid-template-columns: 1fr; gap: 6px; }
+  }
+
+  /* ---- Tooling grid ---- */
+  .tool-grid{ display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--grid-strong); margin-top: 10px; border: 1px solid var(--grid-strong); }
+  .tool-card{ background: var(--bg); padding: 20px; }
+  .tool-card .name{ font-family: 'JetBrains Mono', monospace; color: var(--accent); font-size: 13px; margin-bottom: 8px; }
+  .tool-card .desc{ color: var(--ink-dim); font-size: 13px; }
+
+  /* ---- Spec sheet (skills) ---- */
+  .spec{ margin-top: 10px; }
+  .spec-row{ display: flex; gap: 24px; padding: 12px 0; border-bottom: 1px solid var(--grid); }
+  .spec-row .k{ font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-faint); width: 150px; flex-shrink: 0; padding-top: 2px; }
+  .spec-row .v{ color: var(--ink-dim); font-size: 14px; }
+
+  /* ---- Reference docs (publications) ---- */
+  .ref{ padding: 14px 0; border-bottom: 1px solid var(--grid); font-size: 14px; color: var(--ink-dim); }
+  .ref .tag{ font-family: 'JetBrains Mono', monospace; color: var(--accent); font-size: 11px; margin-right: 10px; }
+  .ref a{ color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink-faint); }
+  .ref a:hover{ color: var(--accent); border-color: var(--accent); }
+
+  /* ---- Contact ---- */
+  .contact-links{ display:flex; gap: 14px; flex-wrap: wrap; margin-top: 20px; }
+  .contact-links a{
+    font-family:'JetBrains Mono', monospace; font-size: 12px;
+    color: var(--ink); text-decoration: none;
+    border: 1px solid var(--grid-strong); padding: 9px 14px;
+    transition: border-color .2s, color .2s, background .2s;
+  }
+  .contact-links a:hover{ color: var(--accent); border-color: var(--accent-dim); background: rgba(216,154,90,0.06); }
+
+  /* ---- Title block footer ---- */
+  footer{ border-top: 2px solid var(--accent-dim); padding-bottom: 40px; }
+  .titleblock{ width: 100%; border-collapse: collapse; margin-top: 0; }
+  .titleblock td{
+    border: 1px solid var(--grid-strong);
+    padding: 12px 16px;
+    vertical-align: top;
+  }
+  .tb-label{ font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--ink-faint); text-transform: uppercase; display:block; margin-bottom: 5px; }
+  .tb-value{ font-size: 14px; color: var(--ink); }
+  .tb-value a{ color: var(--ink); text-decoration: none; }
+  .tb-value a:hover{ color: var(--accent); }
+  .tb-big{ font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 500; }
+  .colophon{ font-family:'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-faint); margin-top: 18px; }
+  @media (max-width: 600px){
+    .titleblock, .titleblock tbody, .titleblock tr, .titleblock td{ display:block; width:100%; }
+    .titleblock td{ border-top: none; }
+    .titleblock tr:first-child td:first-child{ border-top: 1px solid var(--grid-strong); }
+  }
+
+  .reveal{ opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 600px){
+    section{ padding: 60px 0; }
+    .spec-row{ flex-direction: column; gap: 4px; }
+    .spec-row .k{ width: auto; }
+  }
+
+  /* revision log stacks into cards on narrow screens */
+  @media (max-width: 640px){
+    .revlog thead{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+    .revlog, .revlog tbody, .revlog tr, .revlog td{ display:block; width:100%; }
+    .revlog tr{ padding: 20px 0; border-bottom: 1px solid var(--grid); }
+    .revlog tr:hover td{ background: none; }
+    .revlog td{ border: none; padding: 0; }
+    .rev-id, .rev-date{ display: inline-block; vertical-align: baseline; }
+    .rev-id::after{ content: " ·"; color: var(--ink-faint); }
+    .rev-id{ margin-right: 8px; }
+    .rev-date br{ display: none; }
+    .revlog td:last-child{ margin-top: 8px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *, *::before, *::after{ animation-duration: .001ms !important; transition-duration: .001ms !important; }
+    .reveal{ opacity: 1; transform: none; }
+  }
+
+  @media print{
+    body{ background:#fff; color:#111; }
+    body::before, .navbar, .diagram, .skip{ display:none !important; }
+    .reveal{ opacity:1; transform:none; }
+    section{ padding: 18px 0; border-color:#ccc; page-break-inside: avoid; }
+    .hero{ min-height:auto; }
+    a{ color:#111; }
+    .prose, .rev-desc, .item .body, .spec-row .v, .ref{ color:#333; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="navbar" aria-label="Section index">
+  <div class="wrap">
+    <span class="nav-id">HHB — Rev 04</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<div class="wrap hero">
+  <span class="callout">Sheet 01 — General arrangement</span>
+  <h1>Haikal Hakim<br>Baiqunni</h1>
+  <p class="role">R&amp;D Engineer, Mitutoyo Corporation — mechatronics, precision sensing, and AI‑augmented engineering.</p>
+  <p class="desc">10+ years across motor control, non‑contact measurement, and smart sensor R&amp;D. I build simulation pipelines, measurement instruments, and the tools that make them — increasingly with AI coding agents doing the typing while I do the judging.</p>
+  <div class="links">
+    <a class="cta" href="assets/Haikal_Baiqunni_CV.pdf" download>Download CV (PDF)</a>
+    <a href="mailto:haikaru.noriyuki@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/haikal-hakimbaiqunni-9488b785" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/HaikalBaiqunni" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <div class="diagram" aria-hidden="true">
+    <svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg" role="presentation">
+      <circle class="part" cx="150" cy="110" r="55"/>
+      <circle class="part" cx="150" cy="110" r="30"/>
+      <line class="part" x1="150" y1="55" x2="150" y2="165"/>
+      <line class="part" x1="95" y1="110" x2="205" y2="110"/>
+      <path id="dimTop" class="dim-line" d="M60,110 L60,20 M240,110 L240,20 M60,25 L240,25" stroke-dasharray="500" stroke-dashoffset="500"/>
+      <text x="120" y="16" class="dim-text">Ø 55.0 mm</text>
+      <path id="dimSide" class="dim-line" d="M245,55 L280,55 M245,165 L280,165 M275,55 L275,165" stroke-dasharray="300" stroke-dashoffset="300"/>
+      <text x="252" y="115" class="dim-text" transform="rotate(90 252 115)">110.0 ±0.02</text>
+      <text x="105" y="230" class="dim-text">TOL. Ø0.8–1.0 µm</text>
+      <text x="105" y="245" class="dim-text">DECENTER CAL.</text>
+    </svg>
+  </div>
+</div>
+
+<section id="about" class="wrap reveal">
+  <div class="eyebrow">General notes</div>
+  <h2>About</h2>
+  <p class="prose">
+    I lead non‑contact measurement and smart sensor development at Mitutoyo's mechatronics R&amp;D section, with a filed patent
+    (<b>DE102024129207A1</b>) on a dual‑sensor lens measurement system. Recent focus has expanded into <b>physical AI</b> —
+    VLA models, robot arms, and simulation — alongside my core work in electromagnetic sensor design and motor control.
+  </p>
+  <p class="prose" style="margin-top:14px;">
+    Day to day, I run <b>Claude Code, OpenAI Codex, Google Antigravity, and Cursor</b> as working tools, not novelties —
+    they've cut my COMSOL–MATLAB–Python simulation iteration time from days to hours. I studied sliding‑mode control for
+    drone attitude stabilization for my M.Eng at Tokyo Metropolitan University (MEXT Scholar), and I still keep one foot in
+    the hobby side: astronomy, dinosaurs, drones, and small game‑dev projects on the side.
+  </p>
+  <p class="prose" style="margin-top:14px;">
+    Based in Tokyo, Japan. Working languages: Indonesian (native), English (C1), Japanese (JLPT N3).
+  </p>
+</section>
+
+<section id="experience" class="wrap reveal">
+  <div class="eyebrow">Revision history</div>
+  <h2>Experience</h2>
+  <table class="revlog">
+    <thead>
+      <tr><th scope="col">Rev</th><th scope="col">Date</th><th scope="col">Description</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="rev-id">04</td>
+        <td class="rev-date">Apr 2023 — <br>Present</td>
+        <td>
+          <div class="rev-org">R&amp;D Engineer, Mechatronics Development Sec. 2 — Mitutoyo Corporation</div>
+          <div class="rev-desc">Non‑contact lens measurement (WLO) and smart eddy‑current sensor development. AI‑accelerated simulation tooling. Filed patent DE102024129207A1.</div>
+          <div class="rev-meta">Kawasaki, JP · collab: Mitutoyo RCE Netherlands, SIOUX Technologies, MRDA</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="rev-id">03</td>
+        <td class="rev-date">Aug – Nov <br>2019</td>
+        <td>
+          <div class="rev-org">Technical Support Supervisor — PT. Mimaki Indonesia</div>
+          <div class="rev-desc">Led field support team; JP–ID–EN interpreter between HQ management and local teams.</div>
+          <div class="rev-meta">Jakarta, ID</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="rev-id">02</td>
+        <td class="rev-date">Dec 2013 – <br>Mar 2019</td>
+        <td>
+          <div class="rev-org">Mechanical Design &amp; Motor Control Engineer — PT. Indonesia Epson Industry / Seiko Epson Corp.</div>
+          <div class="rev-desc">Inkjet printer mechanism design and PID motor control. 3‑year Japan HQ secondment (Hirooka, Nagano); led a motor‑spec transition worth $100K in cost savings.</div>
+          <div class="rev-meta">Indonesia / Japan</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="rev-id">01a</td>
+        <td class="rev-date">2021 – <br>2023</td>
+        <td>
+          <div class="rev-org">M.Eng, Mechanical Systems Engineering — Tokyo Metropolitan University</div>
+          <div class="rev-desc">MEXT Scholar. Thesis on sliding‑mode control for drone attitude stabilization (published, SICE 2023).</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="rev-id">01</td>
+        <td class="rev-date">2009 – <br>2013</td>
+        <td>
+          <div class="rev-org">B.Eng, Mechatronics Engineering — ITS Surabaya</div>
+          <div class="rev-desc">First publication: vowel recognition for a lip‑sync robot using a neural network (FUZZ‑IEEE 2014).</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="work" class="wrap reveal">
+  <div class="eyebrow">Parts list</div>
+  <h2>Selected work</h2>
+  <p class="prose">Four items that best describe what I actually do: instruments, simulation pipelines, control systems, and the tooling around them.</p>
+  <div class="items">
+    <article class="item">
+      <div class="no">001</div>
+      <div>
+        <h3>WLO non‑contact lens measurement system</h3>
+        <div class="body">Dual SIM sensor instrument with an XY magnetic linear motor stage and a decenter calibration algorithm, reaching 0.8–1.0 µm accuracy across three delivered prototypes. Filed as patent DE102024129207A1.</div>
+        <div class="stack">Vision systems · EM actuation · Control algorithms · Calibration</div>
+      </div>
+    </article>
+    <article class="item">
+      <div class="no">002</div>
+      <div>
+        <h3>Smart eddy‑current sensor (ECS) — new business development</h3>
+        <div class="body">Drove a smart sensor concept from ideation to a working planar ECS prototype for gap and thread‑surface evaluation, as a selected member of Mitutoyo's New Business Strategic Development Office. Joint R&amp;D with Mitutoyo Research &amp; Development America.</div>
+        <div class="stack">Sensor design · Altium / KiCAD · Prototyping · Feasibility</div>
+      </div>
+    </article>
+    <article class="item">
+      <div class="no">003</div>
+      <div>
+        <h3>COMSOL → MATLAB → Python simulation pipeline</h3>
+        <div class="body">End‑to‑end electromagnetic simulation tooling built around COMSOL 6.4 with MATLAB LiveLink and a Python GUI. Refactored undocumented legacy scripts into a maintained tool with a proper results/plot module — parametric sweep iteration went from days to hours.</div>
+        <div class="stack">COMSOL 6.4 · MATLAB LiveLink · Python · PySide6</div>
+      </div>
+    </article>
+    <article class="item">
+      <div class="no">004</div>
+      <div>
+        <h3>Quadcopter sliding‑mode control with chattering attenuation</h3>
+        <div class="body">Master's research at Tokyo Metropolitan University: a trajectory generation design that attenuates chattering in sliding‑mode attitude control for quadcopters. Presented at the SICE Annual Conference 2023.</div>
+        <div class="stack">Sliding‑mode control · MATLAB/Simulink · UAV dynamics</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="tooling" class="wrap reveal">
+  <div class="eyebrow">Tooling spec</div>
+  <h2>AI‑augmented workflow</h2>
+  <p class="prose">Applied as an engineering multiplier, not a replacement for judgment — every output gets checked against the physics before it ships.</p>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="name">Claude Code</div><div class="desc">Agentic CLI for simulation scripting, pipeline debugging, and documentation across COMSOL/MATLAB/Python.</div></div>
+    <div class="tool-card"><div class="name">OpenAI Codex</div><div class="desc">Refactoring and generation for Python evaluation tools and PySide6 GUI development.</div></div>
+    <div class="tool-card"><div class="name">Google Antigravity</div><div class="desc">Multi‑agent orchestration for cross‑window automation and workflow management.</div></div>
+    <div class="tool-card"><div class="name">Cursor</div><div class="desc">Context‑aware editing and codebase‑wide refactors on mechatronics tooling.</div></div>
+    <div class="tool-card"><div class="name">GitHub Copilot</div><div class="desc">Inline assistance for boilerplate, test writing, and docs in version‑controlled projects.</div></div>
+  </div>
+</section>
+
+<section id="skills" class="wrap reveal">
+  <div class="eyebrow">Material spec</div>
+  <h2>Skills</h2>
+  <div class="spec">
+    <div class="spec-row"><div class="k">ENGINEERING</div><div class="v">Mechatronics design, PID / sliding‑mode motor control, non‑contact measurement, vision systems, electromagnetic actuation, UAV control</div></div>
+    <div class="spec-row"><div class="k">SOFTWARE</div><div class="v">Python, C/C++, MATLAB/Simulink, COMSOL 6.4, neural networks, legacy code modernization</div></div>
+    <div class="spec-row"><div class="k">CAD / PCB</div><div class="v">SolidWorks, Fusion 360, PTC Creo, Altium, KiCAD, EasyEDA, 3D printing, DFM/DFA</div></div>
+    <div class="spec-row"><div class="k">AI DEV TOOLS</div><div class="v">Claude Code, OpenAI Codex, Google Antigravity, Cursor, GitHub Copilot</div></div>
+    <div class="spec-row"><div class="k">LANGUAGES</div><div class="v">Indonesian (native), English (EF SET C1 Advanced), Japanese (JLPT N3)</div></div>
+  </div>
+</section>
+
+<section id="publications" class="wrap reveal">
+  <div class="eyebrow">Reference documents</div>
+  <h2>Publications &amp; patent</h2>
+  <div class="ref"><span class="tag">SICE 2023</span>A Trajectory Generation Design for a Sliding Mode Control of a Quadcopter for Chattering Attenuation — SICE Annual Conference 2023, Mie University, Japan.</div>
+  <div class="ref"><span class="tag">FUZZ‑IEEE 2014</span>Vowel Recognition System of Lipsynchrobot in Lips Gesture Using Neural Network — 2014 IEEE International Conference on Fuzzy Systems.</div>
+  <div class="ref"><span class="tag">PATENT</span><a href="https://patents.google.com/patent/DE102024129207A1" target="_blank" rel="noopener">DE102024129207A1</a> — Measuring Machine, dual‑sensor WLO system. Filed Oct 2024, published Apr 2025. Assignee: Mitutoyo Corporation. Status: pending.</div>
+</section>
+
+<section id="contact" class="wrap reveal">
+  <div class="eyebrow">Approval</div>
+  <h2>Contact</h2>
+  <p class="prose">Open to conversations about precision measurement, mechatronics R&amp;D, and AI‑augmented engineering workflows. Email is the fastest route.</p>
+  <div class="contact-links">
+    <a href="mailto:haikaru.noriyuki@gmail.com">haikaru.noriyuki@gmail.com</a>
+    <a href="https://www.linkedin.com/in/haikal-hakimbaiqunni-9488b785" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/HaikalBaiqunni" target="_blank" rel="noopener">GitHub</a>
+    <a href="assets/Haikal_Baiqunni_CV.pdf" download>CV (PDF)</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap reveal">
+  <table class="titleblock">
+    <tr>
+      <td colspan="2"><span class="tb-label">Title</span><span class="tb-big">Haikal Hakim Baiqunni</span></td>
+      <td><span class="tb-label">Sheet</span><span class="tb-value">1 / 1</span></td>
+    </tr>
+    <tr>
+      <td><span class="tb-label">Drawn by</span><span class="tb-value">H. Baiqunni</span></td>
+      <td><span class="tb-label">Location</span><span class="tb-value">Tokyo, Japan</span></td>
+      <td><span class="tb-label">Scale</span><span class="tb-value mono">1:1</span></td>
+    </tr>
+    <tr>
+      <td><span class="tb-label">Email</span><span class="tb-value"><a href="mailto:haikaru.noriyuki@gmail.com">haikaru.noriyuki@gmail.com</a></span></td>
+      <td><span class="tb-label">LinkedIn</span><span class="tb-value"><a href="https://www.linkedin.com/in/haikal-hakimbaiqunni-9488b785" target="_blank" rel="noopener">/in/haikal‑hakimbaiqunni</a></span></td>
+      <td><span class="tb-label">Rev</span><span class="tb-value mono">04</span></td>
+    </tr>
+  </table>
+  <p class="colophon">© <span id="year">2026</span> Haikal Hakim Baiqunni — hand‑built, no framework. Hosted on GitHub Pages.</p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Haikal Hakim Baiqunni",
+  "jobTitle": "R&D Engineer",
+  "email": "mailto:haikaru.noriyuki@gmail.com",
+  "url": "https://haikalbaiqunni.github.io/",
+  "worksFor": { "@type": "Organization", "name": "Mitutoyo Corporation" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Tokyo", "addressCountry": "JP" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Tokyo Metropolitan University" },
+    { "@type": "CollegeOrUniversity", "name": "Institut Teknologi Sepuluh Nopember (ITS)" }
+  ],
+  "knowsLanguage": ["id", "en", "ja"],
+  "knowsAbout": ["Mechatronics", "Precision measurement", "Motor control", "Eddy current sensors", "Sliding mode control", "AI-augmented engineering"],
+  "sameAs": [
+    "https://www.linkedin.com/in/haikal-hakimbaiqunni-9488b785",
+    "https://github.com/HaikalBaiqunni"
+  ]
+}
+</script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealEls = document.querySelectorAll('.reveal');
+
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealEls.forEach(el => el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+
+    window.addEventListener('load', () => {
+      document.querySelectorAll('#dimTop, #dimSide').forEach((el, i) => {
+        setTimeout(() => { el.style.transition = 'stroke-dashoffset 1.1s ease'; el.style.strokeDashoffset = '0'; }, 300 + i * 250);
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Sheet not found</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#12293F; --ink:#E7EEF3; --ink-dim:#9FB5C7; --ink-faint:#85A0B4;
+    --accent:#D89A5A; --accent-dim:#A9713A; --grid:rgba(231,238,243,0.06);
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:'JetBrains Mono', monospace;
+    min-height:100vh; display:flex; align-items:center; justify-content:center;
+    padding:28px; text-align:center;
+  }
+  body::before{
+    content:""; position:fixed; inset:0;
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size:32px 32px; pointer-events:none;
+  }
+  .box{ position:relative; z-index:1; max-width:520px; }
+  .callout{
+    font-size:12px; color:var(--accent); letter-spacing:.12em; text-transform:uppercase;
+    border:1px solid var(--accent-dim); padding:4px 10px; display:inline-block; margin-bottom:24px;
+  }
+  h1{ font-family:'Space Grotesk',sans-serif; font-size:clamp(48px,12vw,84px); font-weight:700; line-height:1; }
+  p{ color:var(--ink-dim); font-size:14px; margin-top:16px; line-height:1.7; }
+  a{
+    display:inline-block; margin-top:28px; color:var(--accent); text-decoration:none;
+    font-size:13px; border:1px solid var(--accent-dim); padding:9px 16px;
+  }
+  a:hover{ background:rgba(216,154,90,0.10); }
+  a:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+  .note{ color:var(--ink-faint); font-size:11px; margin-top:32px; letter-spacing:.08em; }
+</style>
+</head>
+<body>
+  <div class="box">
+    <span class="callout">Error — Sheet not found</span>
+    <h1>404</h1>
+    <p>This drawing number isn't in the set. The revision may have been superseded, or the reference was mistyped.</p>
+    <a href="/">Return to Sheet 01</a>
+    <div class="note">HHB · REV 04 · 1:1</div>
+  </div>
+</body>
+</html>
