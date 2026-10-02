@@ -55,6 +55,10 @@
     pointer-events: none;
     z-index: 0;
   }
+  #bg{
+    position: fixed; inset: 0; width: 100%; height: 100%;
+    z-index: 0; pointer-events: none;
+  }
   .wrap{ max-width: 880px; margin: 0 auto; padding: 0 28px; position: relative; z-index: 1; }
   h1,h2,h3, .stamp{ font-family: 'Space Grotesk', sans-serif; }
   .mono{ font-family: 'JetBrains Mono', monospace; }
@@ -288,7 +292,7 @@
 
   @media print{
     body{ background:#fff; color:#111; }
-    body::before, .navbar, .diagram, .skip{ display:none !important; }
+    body::before, #bg, .navbar, .diagram, .skip{ display:none !important; }
     .reveal{ opacity:1; transform:none; }
     section{ padding: 18px 0; border-color:#ccc; page-break-inside: avoid; }
     .hero{ min-height:auto; }
@@ -299,6 +303,7 @@
 </head>
 <body>
 
+<canvas id="bg" aria-hidden="true"></canvas>
 <a class="skip" href="#main">Skip to content</a>
 
 <nav class="navbar" aria-label="Section index">
@@ -525,6 +530,8 @@
   </table>
   <p class="colophon">© <span id="year">2026</span> Haikal Hakim Baiqunni — hand‑built, no framework. Hosted on GitHub Pages.</p>
 </footer>
+
+<script src="assets/bg.js" defer></script>
 
 <script type="application/ld+json">
 {
